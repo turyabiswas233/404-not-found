@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="404-not-found.html">
+    <a href="index.html">
       Demo
     </a>
     <span> | </span>
