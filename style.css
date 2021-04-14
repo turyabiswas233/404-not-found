@@ -4,9 +4,10 @@
 }
 
 body {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
@@ -15,14 +16,14 @@ body {
 
 
 /*<< starts desktop design css >>*/
-@media only screen and(min-width:600px) {
+@media only screen and (min-width:600px) {
     .section-head {
         margin: 20px 50px;
         font-family: 'Inconsolata',
             monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         letter-spacing: -1.5px;
         color: #333;
     }
@@ -32,7 +33,7 @@ body {
         justify-content: space-evenly;
         width: 80%;
         min-height: 100%;
-        margin: 6% 10px 10px 5%;
+        margin: 5% 10px 10px 5%;
     }
 
     .section-body .image img {
@@ -51,7 +52,7 @@ body {
         margin: 10px auto;
         font-style: normal;
         font-weight: bold;
-        font-size: 3.4vw;
+        font-size: 3.4rem;
         letter-spacing: -0.035em;
         color: #333333;
     }
@@ -63,7 +64,7 @@ body {
         width: 75%;
         max-width: 381px;
         max-height: 108px;
-        font-size: 1.5vw;
+        font-size: 1.5rem;
         margin: 10% 0;
         letter-spacing: -0.035em;
         color: #333333;
@@ -71,11 +72,11 @@ body {
 
     .section-body .main-body .btn {
         padding: 10pt 15pt;
-        margin: 10% 0;
+        margin: 5% 0;
         width: fit-content;
         color: #fff;
         font-style: normal;
-        font-size: 1vw;
+        font-size: 1rem;
         font-family: 'Space Mono', monospace;
         letter-spacing: -0.05em;
         text-transform: uppercase;
@@ -90,7 +91,8 @@ body {
         font-size: 1rem;
         font-style: normal;
         color: #888;
-        position: relative;
+        position: sticky;
+        top: 100%;
         font-family: 'Montserrat',
             sans-serif;
     }
@@ -103,13 +105,14 @@ body {
 @media only screen and (max-width:600px) {
 
     .section-head {
-        /* padding: 2%; */
-        margin: 5% 0 0 6%;
+        padding: 2%;
+        margin: 5% 0 0 5%;
+        width: auto;
         font-family: 'Inconsolata',
             monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 4vw;
+        font-size: 1em;
         height: 10px;
         line-height: 10px;
         letter-spacing: -1.5px;
@@ -167,7 +170,7 @@ body {
 
     .section-body .main-body button.btn {
         padding: 10pt 15pt;
-        margin-left: 5%;
+        margin: 10% 0 0 5%;
         width: fit-content;
         color: #fff;
         font-style: normal;
@@ -187,7 +190,8 @@ body {
         letter-spacing: 0.5px;
         font-style: normal;
         color: #888;
-        position: relative;
+        position: sticky;
+        top: 100%;
         font-family: 'Montserrat',
             sans-serif;
     }
